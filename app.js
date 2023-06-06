@@ -110,6 +110,10 @@ app.use(`/api/${API_VERSION}`, courseRoutes);
 app.use(`/api/${API_VERSION}`, postRoutes);
 app.use(`/api/${API_VERSION}`, newsletterRoutes);
 
+app.get("/", (req, res) => {
+  res.status(200).send({ msg: "Hola TinCode!" });
+});
+
 module.exports = app;
 /*----------  Exportar  ----------*/
 /**
