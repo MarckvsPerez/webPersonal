@@ -52,7 +52,7 @@ la aplicación está activa y lista para ser utilizada.
 mongoose.connect(
   `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/`,
   (error) => {
-    if (error) console.log(error);
+    if (error) throw error;
 
     app.listen(PORT, () => {
       console.log("######################");
