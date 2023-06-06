@@ -31,7 +31,7 @@ const {
  * necesidades de su aplicación, ya sea a través de una variable de entorno o estableciendo
  * manualmente el valor dentro del código.
  */
-const PORT = process.env.POST || 3977;
+const PORT = process.env.PORT || 3977;
 
 /*----------  Conexión  ----------*/
 /**
